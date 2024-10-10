@@ -1,5 +1,6 @@
 // ./services 에서 생성한 서비스 파일을 불러옵니다.
 import ShortsToWatch from "./services/ShortsToWatch";
+import AutoPauseShorts from "./services/AutoPauseShorts";
 
 namespace App {
   // 서비스 인터페이스 정의 (선택 사항)
@@ -11,7 +12,7 @@ namespace App {
   }
 
   // 서비스 로딩
-  const Services: Service[] = [new ShortsToWatch()];
+  const Services: Service[] = [new ShortsToWatch(), new AutoPauseShorts()];
 
   // 서비스 시작
   Services.forEach((service, index) => {
