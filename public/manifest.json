@@ -1,0 +1,12 @@
+{
+  "name": "Advanced Youtube",
+  "version": "1.0",
+  "description": "더 나은 데스크톱 유튜브 UX를 제공합니다. Github : @whitedev7773",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["App.js"]
+    }
+  ]
+}
